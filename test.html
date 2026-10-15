@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Information Form</title>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <a href="index.html"><strong>FPOP</strong></a> | 
+      <a href="index.html">Home</a> | 
+      <a href="about.html">About Us</a> | 
+      <a href="services.html">Services</a> | 
+      <a href="clinics.html">Clinics</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h1>Doctor Registration</h1>
+      --
+      <form action="#" method="POST">
+        
+        <!-- Doctor ID -->
+        <div>
+          <label for="doctor_id">Doctor ID:</label><br>
+          <input type="text" id="doctor_id" name="doctor_id" placeholder="e.g. DOC-001" required>
+        </div>
+        <br>
+
+        <!-- First Name -->
+        <div>
+          <label for="first_name">First Name:</label><br>
+          <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        </div>
+        <br>
+
+        <!-- Middle Name -->
+        <div>
+          <label for="middle_name">Middle Name:</label><br>
+          <input type="text" id="middle_name" name="middle_name" placeholder="Middle Name">
+        </div>
+        <br>
+
+        <!-- Last Name -->
+        <div>
+          <label for="last_name">Last Name:</label><br>
+          <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+        </div>
+        <br>
+
+        <!-- Specialization -->
+        <div>
+          <label for="specialization">Specialization:</label><br>
+          <select id="specialization" name="specialization" required>
+            <option value="">-- Select Specialization --</option>
+            <option value="Obstetrics and Gynecology">Obstetrics and Gynecology (OB-GYN)</option>
+            <option value="Family Medicine">Family Medicine</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="General Medicine">General Medicine</option>
+            <option value="Reproductive Health">Reproductive Health Specialist</option>
+          </select>
+        </div>
+        <br>
+
+        <!-- Contact Number -->
+        <div>
+          <label for="contact_number">Contact Number:</label><br>
+          <input type="tel" id="contact_number" name="contact_number" placeholder="e.g. 09171234567" required>
+        </div>
+        <br>
+
+        <!-- Schedule Days -->
+        <div>
+          <label>Schedule Days:</label><br>
+          <input type="checkbox" id="mon" name="schedule_days[]" value="Monday">
+          <label for="mon">Monday</label>
+
+          <input type="checkbox" id="tue" name="schedule_days[]" value="Tuesday">
+          <label for="tue">Tuesday</label>
+
+          <input type="checkbox" id="wed" name="schedule_days[]" value="Wednesday">
+          <label for="wed">Wednesday</label>
+
+          <input type="checkbox" id="thu" name="schedule_days[]" value="Thursday">
+          <label for="thu">Thursday</label>
+
+          <input type="checkbox" id="fri" name="schedule_days[]" value="Friday">
+          <label for="fri">Friday</label>
+
+          <input type="checkbox" id="sat" name="schedule_days[]" value="Saturday">
+          <label for="sat">Saturday</label>
+
+          <input type="checkbox" id="sun" name="schedule_days[]" value="Sunday">
+          <label for="sun">Sunday</label>
+        </div>
+        <br>
+
+        <!-- Buttons -->
+        <div>
+          <button type="submit">Submit Doctor Record</button>
+          <button type="reset">Clear Form</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; Family Planning Organization of the Philippines</p>
+  </footer>
+
+</body>
+</html>
